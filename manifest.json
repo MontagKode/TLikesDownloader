@@ -1,0 +1,30 @@
+{
+  "name": "TLikesDownloader",
+  "description": "Download all user's liked posts on Tumblr by clicking this extension's icon when you're at tumblr.com/liked/by/username",
+  "version": "0.4",
+  "minimum_chrome_version": "31",
+  "manifest_version": 2,
+  "permissions": [
+	"tabs",
+    "activeTab",
+    "downloads",
+	"https://www.tumblr.com/liked/by/*"
+  ],
+  "browser_action": {
+    "default_icon": "/icon_128.png"
+  },
+  "icons": {
+    "16": "/icon_16.png",
+    "48": "/icon_48.png",
+    "128": "/icon_128.png"
+  },
+  "background": {
+    "scripts": ["/main.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.tumblr.com/liked/by/*"],
+      "js": ["/page_content.js"]
+    }
+  ]
+}
