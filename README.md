@@ -13,7 +13,9 @@ by clicking the extension's icon when you're at tumblr.com/liked/by/username
 
 You can start from any page: tumblr.com/liked/by/username/page/number
 
-Disable extension in Chrome when not using it if it's buggy
+If a page is buggy, disable extension in Chrome, go to next page and start again
+
+Disable extension when not using it if it's buggy
 
 ## License
 
